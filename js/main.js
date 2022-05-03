@@ -1,7 +1,7 @@
-jQuery(document).ready(function( $ ) {
+jQuery(document).ready(function ($) {
 
   // Smooth scroll for the menu and links with .scrollto classes
-  $('.smothscroll').on('click', function(e) {
+  $('.smothscroll').on('click', function (e) {
     e.preventDefault();
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var target = $(this.hash);
@@ -20,13 +20,13 @@ jQuery(document).ready(function( $ ) {
 
   // JavaScript Chart
   var doughnutData = [{
-      value: 70,
-      color: "#1abc9c"
-    },
-    {
-      value: 30,
-      color: "#ecf0f1"
-    }
+    value: 70,
+    color: "#1abc9c"
+  },
+  {
+    value: 30,
+    color: "#ecf0f1"
+  }
   ];
   var myDoughnut = new Chart(document.getElementById("javascript").getContext("2d")).Doughnut(doughnutData);
 
